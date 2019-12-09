@@ -12,7 +12,7 @@ const ip = '127.0.0.1';
 const app = express();
 app.use(cors());
 app.use(bodyParser());
-app.use('someurl/', basicRouter);
+app.use('/someurl', basicRouter);
 
 const server = http.createServer(app);
 
